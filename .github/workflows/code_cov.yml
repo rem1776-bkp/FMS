@@ -26,4 +26,5 @@ jobs:
     - name: Build the library
       run: make check
     - name: Send coverage results to codecov.io
+      shell: bash
       run: bash <(curl -s https://codecov.io/bash)
